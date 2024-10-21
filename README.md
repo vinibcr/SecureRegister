@@ -12,7 +12,21 @@ Secure Register é uma aplicação Spring Boot que permite o registro e autentic
 
 ### 1. Registrar Usuário
 
+
 **Endpoint:** `POST http://localhost:8080/auth/register`
+
+
+### Autenticar Usuário
+GET: http://localhost:8080/auth/login
+Parâmetros:
+username: Nome de usuário
+password: Senha
+Exemplo: http://localhost:8080/auth/login?username=vinicius&password=Senha123
+### Resposta:
+Usuário autenticado com sucesso!
+
+### 2. Listar Usuários
+GET: http://localhost:8080/auth/users
 
 **Corpo da Requisição:**
 ```json
@@ -20,18 +34,6 @@ Secure Register é uma aplicação Spring Boot que permite o registro e autentic
     "username": "vinicius",
     "password": "Senha123"
 }
-
-**GET http://localhost:8080/auth/login**
-
-username: Nome de usuário
-password: Senha
-
-http://localhost:8080/auth/login?username=vinicius&password=Senha123
-Usuário autenticado com sucesso!
-
-
-GET http://localhost:8080/auth/users
-
 [
   {
     "id": 1,
