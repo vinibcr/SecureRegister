@@ -7,6 +7,7 @@ Secure Register é uma aplicação Spring Boot que permite o registro e autentic
 - Registro de novos usuários.
 - Autenticação de usuários existentes.
 - Listagem de todos os usuários cadastrados.
+- Define as regras de segurança e autorização para as requisições HTTP.
 
 ## Endpoints
 
